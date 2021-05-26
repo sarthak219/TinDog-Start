@@ -35,7 +35,7 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: left;">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Contact</a>
@@ -141,7 +141,7 @@
 
     <div class="row">
       <div class="col-lg-4 col-md-6 pricing-column ">
-        <div class="card">
+        <div class="card card-container">
           <div class="card-header">
             <h3>Chihuahua</h3>
           </div>
@@ -150,13 +150,15 @@
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
+          </div>
+          <div class="card-footer" style="background-color: inherit; border: none;">
             <button class="btn btn-outline-dark btn-lg" type="button">Sign Up</button>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 pricing-column">
-        <div class="card">
+        <div class="card card-container">
           <div class="card-header">
             <h3>Labrador</h3>
           </div>
@@ -165,13 +167,17 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
+            <!-- <button class="btn btn-dark btn-lg" type="button">Sign Up</button> -->
+          </div>
+
+          <div class="card-footer" style="background-color: inherit; border: none;">
             <button class="btn btn-dark btn-lg" type="button">Sign Up</button>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 pricing-column">
-        <div class="card">
+        <div class="card card-container">
           <div class="card-header">
             <h3>Mastiff</h3>
           </div>
@@ -181,6 +187,8 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
+          </div>
+          <div class="card-footer" style="background-color: inherit; border: none;">
             <button class="btn btn-dark btn-lg" type="button">Sign Up</button>
           </div>
         </div>
@@ -192,11 +200,14 @@
   <!-- Call to Action -->
 
   <section id="cta">
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
+    <div class="row">
+      <div class="col-lg-8 col-10 m-auto cta-container">
+        <h3>Find the True Love of Your Dog's Life Today.</h3>
+        <button class="btn btn-dark btn-lg download-btn" type="button"><i class="fab fa-apple"></i> Download</button>
+        <button class="btn btn-outline-light btn-lg download-btn" type="button"><i class="fab fa-google-play"></i>
+          Download</button>
+      </div>
+    </div>
   </section>
 
 
@@ -204,7 +215,14 @@
 
   <footer id="footer">
 
-    <p>© Copyright 2018 TinDog</p>
+    <div class="social-handles-container">
+      <i class="mx-2 mt-5 mb-2 fab fa-twitter"></i>
+      <i class="mx-2 mt-5 mb-2 fab fa-facebook-f"></i>
+      <i class="mx-2 mt-5 mb-2 fab fa-instagram"></i>
+      <i class="mx-2 mt-5 mb-2 fas fa-envelope"></i>
+    </div>
+
+    <p>© Copyright 2021 TinDog</p>
 
   </footer>
 
